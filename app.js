@@ -1,6 +1,6 @@
 const qwerty = document.getElementById('qwerty'); 
 const phrase = document.getElementById('phrase');
-const btn__reset = document.getElementsByClassName('btn__reset')[0]; 
+const btn_reset = document.getElementsByClassName('btn__reset')[0]; 
 let missed = 0; 
 
 const phrases = [
@@ -11,7 +11,7 @@ const phrases = [
   ['The Call of the Wild']
 ];
 
-btn__reset.addEventListener('click', () => { // Hides button when clicking Start Game
+btn_reset.addEventListener('click', () => { // Hides button when clicking Start Game
   const startGame = document.getElementById('overlay');
   startGame.style.display = 'none';  
 });
@@ -25,17 +25,17 @@ function getRandomPhraseAsArray(arr) {  // does random stuff to arrays that is p
 
 
 function addPhraseToDisplay(arr) { // do stuff any arr that is passed in, and add to `#phrase ul`
-
+ 
 }
 
 const phraseArray = getRandomPhraseAsArray(phrases);
 // addPhraseToDisplay(phraseArray);
 addPhraseToDisplay(phraseArray.toLowerCase());
 
-function checkLetter () => {
+function checkLetter () {
 
 }
-function checkWin  () => {
+function checkWin  () {
     let show = document.querySelectorAll('.show');
     let letters = document.querySelectorAll('.letter');
     let title = overlay.querySelector('.title');
@@ -52,7 +52,7 @@ function checkWin  () => {
     }
   }
 
-  qwerty.addEventListener('click', () => {
+qwerty.addEventListener('click', () => {
 
   });
 /*const myButton = document.getElementsById('myButton');
