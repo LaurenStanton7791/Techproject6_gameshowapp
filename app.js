@@ -21,18 +21,28 @@ function getRandomPhraseAsArray(arr) {  // does random stuff to arrays that is p
   return arr[randomNumber];
   };
 
+  
+function addPhraseToDisplay(arr) {
+  for(let i = 0; i < arr.length; i++) { // 
+      let li = document.createElement('li'); // create 'li'
+      li.textContent = arr[i]; // add content to 'li[i]'
+      let ul = phrase.querySelector('ul'); // declare ul
+      ul.appendChild(li); // attach 'li' with content to 'ul'
+      if( arr[i] != ' ' ){ // test for character or white space
+          li.classList.add('letter'); // add class letter to character
+      }
+      else {
+          li.classList.add('space'); // add class space to character
+      }
+  }
+};
 
-
-
-function addPhraseToDisplay(arr) { // do stuff any arr that is passed in, and add to `#phrase ul`
-
-}
 
 const phraseArray = getRandomPhraseAsArray(phrases);
 // addPhraseToDisplay(phraseArray);
 addPhraseToDisplay(phraseArray.toLowerCase());
 
-function checkLetter () => {
+/*function checkLetter () => {
 
 }
 function checkWin  () => {
