@@ -1,6 +1,6 @@
 const qwerty = document.getElementById('qwerty'); 
 const phrase = document.getElementById('phrase');
-const btn__reset = document.getElementsByClassName('btn__reset')[0]; 
+const btn_reset = document.getElementsByClassName('btn__reset')[0]; 
 let missed = 0; 
 
 const phrases = [
@@ -11,7 +11,7 @@ const phrases = [
   ['The Call of the Wild']
 ];
 
-btn__reset.addEventListener('click', () => { // Hides button when clicking Start Game
+btn_reset.addEventListener('click', () => { // Hides button when clicking Start Game
   const startGame = document.getElementById('overlay');
   startGame.style.display = 'none';  
 });
@@ -38,14 +38,26 @@ function addPhraseToDisplay(arr) {
 };
 
 
+<<<<<<< HEAD
+=======
+
+function addPhraseToDisplay(arr) { // do stuff any arr that is passed in, and add to `#phrase ul`
+ 
+}
+
+>>>>>>> 55d132772d0c9f7cd7fb8abbc74fee335826058d
 const phraseArray = getRandomPhraseAsArray(phrases);
 // addPhraseToDisplay(phraseArray);
 addPhraseToDisplay(phraseArray.toLowerCase());
 
+<<<<<<< HEAD
 /*function checkLetter () => {
+=======
+function checkLetter () {
+>>>>>>> 55d132772d0c9f7cd7fb8abbc74fee335826058d
 
 }
-function checkWin  () => {
+function checkWin  () {
     let show = document.querySelectorAll('.show');
     let letters = document.querySelectorAll('.letter');
     let title = overlay.querySelector('.title');
@@ -62,7 +74,7 @@ function checkWin  () => {
     }
   }
 
-  qwerty.addEventListener('click', () => {
+qwerty.addEventListener('click', () => {
 
   });
 /*const myButton = document.getElementsById('myButton');
