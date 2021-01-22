@@ -88,6 +88,7 @@ button {
   border-radius: 5px;
 }
 
+
 .space {
   width: 15px;
 }
@@ -148,6 +149,7 @@ button {
 
 .win {
   background-color: var(--color-win);
+  font-size: 50px; 
 }
 
 .win a {
@@ -156,6 +158,7 @@ button {
 
 .lose {
   background-color: var(--color-lose);
+  font-size: 50px; 
 }
 
 .lose a {

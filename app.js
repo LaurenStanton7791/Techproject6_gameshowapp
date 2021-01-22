@@ -21,13 +21,13 @@ function getRandomPhraseAsArray(arr) {  // does random stuff to arrays that is p
   return arr[randomNumber];
   };
 
-function addPhraseToDisplay(arr)  {
+function addPhraseToDisplay(arr)  { // A random, unknown phrase is chosen when the page load
   for (let i = 0; i < arr.length; i++) {
     let li = document.createElement('li');
     li.textContent = arr[i];
     let ul = phrase.querySelector('ul');
     ul.appendChild(li);
-    if( arr[i] != '' ) {
+    if( arr[i] != ' ') {
       li.classList.add('letter');
     } else { 
       li.classList.add('space');
@@ -69,6 +69,7 @@ qwerty.addEventListener('click', (event) => {
   }
   checkWin();
 });
+
 function checkWin() {
   let letter = document.querySelectorAll(".letter"); // declare variable
   let show = document.querySelectorAll(".show"); // declare variable
@@ -77,13 +78,14 @@ function checkWin() {
       overlay.style.display = 'block';
       // overlay.className = 'win';
       overlay.classList.add("win")
-      overlay.textContent = 'You win!';
+      overlay.textContent = 'You Win!!!!';
   }
   if ( missed >= 5 ) {
       overlay.style.display = 'block';
       // overlay.className = 'lose';
       overlay.classList.add('lose');
-      overlay.textContent = 'You lose'; // Dsiplay message you lose 
+      overlay.textContent = 'Try again'; // Dsiplay message Try again for when user loses
   }
 };
+
 
